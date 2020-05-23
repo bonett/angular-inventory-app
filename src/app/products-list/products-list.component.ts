@@ -7,11 +7,9 @@ import { Product } from "../product.model";
   styleUrls: ["./products-list.component.scss"]
 })
 export class ProductsListComponent {
-  @Input()
-  productList: Product[];
-
-  @Output()
-  onProductSelected: EventEmitter<Product>;
+  
+  @Input()productList: Product[];
+  @Output() onProductSelected: EventEmitter<Product>;
 
   private currentProduct: Product;
 

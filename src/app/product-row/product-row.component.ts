@@ -7,9 +7,10 @@ import { Product } from '../product.model';
   styleUrls: ['./product-row.component.scss']
 })
 export class ProductRowComponent implements OnInit {
+  
   @Input() product: Product;
   @HostBinding('attr.class') cssClass = 'item';
-  ngOnInit() {
-  }
+
+  ngOnInit(): void { }
 
 }

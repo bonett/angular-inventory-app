@@ -11,7 +11,6 @@ export class PriceDisplayComponent implements OnInit {
 
   @Input() price: number;
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {}
 
 }

@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 product__image">
+            <app-product-image [product]='product'></app-product-image>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 product__description">
+            <h2 class="product__name">{{ product.name }}</h2>
+            <h4 class="product__info">SKU #{{ product.sku }}</h4>
+            <app-product-department [product]='product'></app-product-department>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 product__price">
+            <app-price-display [price]='product.price'></app-price-display>
+        </div>
+    </div>
+</div>
